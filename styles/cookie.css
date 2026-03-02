@@ -71,7 +71,7 @@
 .cookie-modal__title {
   font-family: var(--font);
   font-size: clamp(1.5rem, 3vw, 2.5rem);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 100%;
   letter-spacing: -2%;
   color: var(--clr-dark);

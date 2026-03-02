@@ -133,7 +133,7 @@
 .hero__heading {
   font-family: var(--font);
   font-size: clamp(3rem, 4.5vw, 3.5rem);
-  font-weight: bold;
+  font-weight: 600;
   line-height: 100%;
   letter-spacing: -2%;
   color: var(--clr-dark);
@@ -320,7 +320,7 @@
 }
 .health-tip__label {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 100%;
   letter-spacing: -2%;
   color: var(--clr-dark-mid);
@@ -329,7 +329,7 @@
 .health-tip__fact {
   font-family: var(--font);
   font-size: clamp(2rem, 3vw, 2.3rem);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 120%;
   letter-spacing: -2%;
   color: var(--clr-dark);
@@ -640,7 +640,7 @@
 }
 .footer__link {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 100%;
   letter-spacing: -2%;
   padding: 12px;
