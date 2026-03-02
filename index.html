@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthcover – Private Health Insurance That Works for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/cookie.css" />
+</head>
+<body>
+  <header class="nav" id="main-nav" role="banner">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo" aria-label="Healthcover Home">
+        <span>
+          <img src="./assets/header/logo/left-stroke.svg" alt="[" class="nav__logo-icon" />
+        </span>
+        Healthcover
+        <span>
+          <img src="./assets/header/logo/right-stroke.svg" alt="]" class="nav__logo-icon" />
+        </span>
+      </a>
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#hero" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">Who We Are</a>
+        <a href="#article" class="nav__link">Article</a>
+      </nav>
+      <a href="#contact" class="btn btn--lime nav__cta">Get a Quote</a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" hidden>
+      <nav class="mobile-menu__links">
+        <a href="#hero" class="mobile-menu__link">Home</a>
+        <a href="#about" class="mobile-menu__link">Who We Are</a>
+        <a href="#article" class="mobile-menu__link">Article</a>
+        <a href="#contact" class="btn btn--lime mobile-menu__cta">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 id="hero-heading" class="hero__heading">
+            Private Health Insurance That
+            <em class="hero__heading-accent">Works for You</em>
+          </h1>
+          <div class="hero__info">
+            <p class="hero__body">
+              We provide smart, flexible medical insurance solutions for individuals,
+              families, and businesses. Our plans combine extensive coverage, fast claim
+              processing, and access to top-tier private clinics and specialists — all
+              designed to put your health first.
+            </p>
+            <a href="#contact" class="btn btn--green hero__cta">Get a Quote</a>
+          </div>          
+        </div>
+        <div class="hero__images" aria-hidden="true">
+          <div class="hero__img hero__img--1">
+            <img src="assets/hero/image4.svg" alt="Doctor consulting a patient" />
+          </div>
+          <div class="hero__img hero__img--2">
+            <img src="assets/hero/image8.svg" alt="Family health care" />
+          </div>
+          <div class="hero__img hero__img--3">
+            <img src="assets/hero/image2.svg" alt="Health technology" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-cta" id="quote-cta" aria-labelledby="quote-cta-heading">
+      <div class="container">
+        <button class="accordion-trigger" id="quote-calc-trigger" aria-expanded="false" aria-controls="quote-calc">
+          <span class="accordion-trigger__plus">+</span> Instant Quote Calculator
+        </button>
+      </div>
+
+      <div class="container quote-cta__inner">
+        <div class="quote-cta__text">
+          <h2 id="quote-cta-heading" class="quote-cta__heading">
+            Get Your Quote in <em class="text-accent">Under 60 Seconds</em>
+          </h2>
+          <p class="quote-cta__body">
+            Answer a few simple questions and get a personalised insurance
+            quote – no commitment, no credit card required
+          </p>
+          <a href="#contact" class="btn btn--green quote__cta">Request a Callback</a>
+        </div>
+        <div class="quote-cta__image" aria-hidden="true">
+          <img src="assets/quote-cta/image3.svg" alt="Elderly person using smartphone" />
+        </div>
+      </div>
+    </section>
+
+    <section class="health-tip" id="health-tip" aria-labelledby="health-tip-heading">
+      <div class="container">
+        
+        <div class="health-tip__card" id="tip-panel">
+          <button class="accordion-trigger" id="tip-trigger" aria-expanded="true" aria-controls="tip-panel">
+            <span class="accordion-trigger__plus">+</span> Health Tip of the Day
+          </button>
+          <p class="health-tip__label">Today's Health Insight</p>
+          <h2 id="health-tip-heading" class="health-tip__fact" id="tip-text">
+            Did you know? Booking a private GP in advance can reduce your wait time by 72%
+          </h2>
+          <p class="health-tip__note">Refreshes daily with new NHS-aligned wellness or service tips</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <button class="accordion-trigger" id="testimonials-trigger" aria-expanded="true" aria-controls="testimonials-panel">
+          <span class="accordion-trigger__plus">+</span> Customer Testimonials
+        </button>
+        <div id="testimonials-panel">
+          <div class="testimonials__header">
+            <h2 id="testimonials-heading" class="section-heading">What Our Clients Say</h2>
+            <div class="testimonials__controls" role="group" aria-label="Testimonial navigation">
+              <button class="testimonial-btn testimonial-btn--prev" id="prev-testimonial" aria-label="Previous testimonial">
+                <img src="assets/buttons/left.svg" alt="left" />
+              </button>
+              <button class="testimonial-btn testimonial-btn--next" id="next-testimonial" aria-label="Next testimonial">
+                <img src="assets/buttons/right.svg" alt="right" />
+              </button>
+            </div>
+          </div>
+          <div class="testimonials__track" id="testimonials-track" aria-live="polite">
+            <!-- JS-rendered -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact__inner">
+        <div class="contact__text">
+          <h2 id="contact-heading" class="section-heading">
+            Connect with <br> Our <em class="text-accent">Healthcare Specialists</em>
+          </h2>
+          <p class="contact__body">
+            Confused about coverage options? Our certified advisors are here to help you find the perfect plan
+          </p>
+        </div>
+        <div class="contact__image" aria-hidden="true">
+          <img src="assets/hero/image4.svg" alt="Healthcare specialist consultation" />
+        </div>
+        <div>
+          <form class="contact__form" id="contact-form" novalidate aria-label="Schedule consultation form">
+            <div class="form-group">
+              <input type="text" id="cf-name" class="form-input" placeholder="Enter first name" required autocomplete="given-name" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="cf-email" class="form-input" placeholder="Enter email" required autocomplete="email" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group form-group--phone">
+              <div class="phone-input">
+                <button type="button" class="phone-input__flag" aria-label="Country code" aria-haspopup="listbox">
+                   <img src="https://flagcdn.com/gb.svg" alt="United Kingdom flag" class="phone-input__icon">
+                </button>
+                <input type="tel" id="cf-phone" class="form-input phone-input__field" placeholder="+44" autocomplete="tel" />
+              </div>
+              <span class="form-error" role="alert" aria-hidden="true"></span>
+            </div>
+            <button type="submit" class="btn btn--green contact__submit">Schedule My Consultation</button>
+          </form>
+          <p class="contact__disclaimer">
+            By submitting this form, you acknowledge our Privacy Policy and consent to healthcare insurance consultation contact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span>
+          <img src="./assets/header/logo/left-stroke.svg" alt="[" class="nav__logo-icon" />
+        </span>
+        Healthcover
+        <span>
+          <img src="./assets/header/logo/right-stroke.svg" alt="]" class="nav__logo-icon" />
+        </span>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#hero" class="footer__link">Home</a>
+        <a href="#about" class="footer__link">Who We Are</a>
+        <a href="#article" class="footer__link">Article</a>
+      </nav>
+    </div>
+    <div class="footer__legal">
+      <p class="container">The information on this website is provided for informational purposes only and does not constitute medical advice. Healthcover is not responsible for decisions made based on this information. Always consult with a qualified medical professional for questions regarding your health. Insurance coverage terms are guaranteed solely by official policy documentation.</p>
+    </div>
+  </footer>
+  
+  <div class="cookie-overlay" id="cookie-overlay" role="dialog" aria-modal="true" aria-labelledby="cookie-title">
+    <div class="cookie-modal">
+      <div class="cookie-modal__header">
+        <div class="cookie-modal__intro">
+          <h2 id="cookie-title" class="cookie-modal__title">We Value Your Privacy</h2>
+          <p class="cookie-modal__desc">This website uses cookies to enhance your browsing experience and provide personalized services.</p>
+        </div>
+        <div class="cookie-modal__actions">
+          <p class="cookie-modal__note">By continuing to use this site, you consent to our use of cookies as described in our Cookie Policy.</p>
+          <button class="btn btn--lime cookie-btn cookie-btn-1" id="accept-all">Accept All Cookies</button>
+          <button class="btn btn--gray cookie-btn cookie-btn-2" id="decline-non">Decline Non-Essential Cookies</button>
+          <button class="cookie-manage-btn cookie-btn-3" id="manage-prefs" aria-expanded="false" aria-controls="cookie-prefs">
+            Manage Preferences
+            <svg width="14" height="8" viewBox="0 0 14 8" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="cookie-prefs" id="cookie-prefs" hidden>
+        <p>We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below.</p>
+        <p>The cookies that are categorised as "Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site</p>
+        <p>We also use third-party cookies that help us analyse how you use this website, store your preferences, and provide the content and advertisements that are relevant to you. These cookies will only be stored in your browser with your prior consent.</p>
+        <p>You can choose to enable or disable some or all of these cookies but disabling some of them may affect your browsing experience.</p>
+        <button class="cookie-show-less" id="show-less">Show less</button>
+
+        <div class="cookie-categories">
+
+          <div class="cookie-category">
+            <div class="cookie-category__info">
+              <div class="cookie-category__header">
+                <span class="cookie-badge">Always Active</span>
+                <strong>Necessary</strong>
+                <small>No cookies to display</small>
+              </div>
+            </div>
+            <div>
+              <p>Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.</p>
+            </div>
+            <div class="cookie-category__toggle">
+              <label class="toggle" aria-label="Toggle Necessary cookies">
+                <input type="checkbox" checked disabled />
+                <span class="toggle__track"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category__info">
+              <div class="cookie-category__header">
+                <strong>Functional</strong>
+                <small>No cookies to display</small>
+              </div>
+            </div>
+            <div>
+              <p>Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.</p>
+            </div>
+            <div class="cookie-category__toggle">
+              <label class="toggle" aria-label="Toggle Functional cookies">
+                <input type="checkbox" checked class="cookie-toggle-input" data-category="functional" />
+                <span class="toggle__track"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category__info">
+              <div class="cookie-category__header">
+                <strong>Analytics</strong>
+                <small>No cookies to display</small>
+              </div>
+            </div>
+            <div>
+              <p>Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.</p>
+            </div>
+            <div class="cookie-category__toggle">
+              <label class="toggle" aria-label="Toggle Analytics cookies">
+                <input type="checkbox" class="cookie-toggle-input" data-category="analytics" />
+                <span class="toggle__track"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category__info">
+              <div class="cookie-category__header">
+                <strong>Performance</strong>
+                <small>No cookies to display</small>
+              </div>
+              </div>
+            <div>
+              <p>Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors.</p>
+            </div>
+            <div class="cookie-category__toggle">
+              <label class="toggle" aria-label="Toggle Performance cookies">
+                <input type="checkbox" class="cookie-toggle-input" data-category="performance" />
+                <span class="toggle__track"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category__info">
+              <div class="cookie-category__header">
+                <strong>Advertisement</strong>
+                <small>No cookies to display</small>
+              </div>
+            </div>
+            <div>
+              <p>Advertisement cookies are used to provide visitors with customised advertisements based on the pages you visited previously and to analyse the effectiveness of the ad campaigns.</p>
+            </div>
+            <div class="cookie-category__toggle">
+              <label class="toggle" aria-label="Toggle Advertisement cookies">
+                <input type="checkbox" class="cookie-toggle-input" data-category="advertisement" />
+                <span class="toggle__track"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <div class="cookie-prefs__footer">
+          <button class="btn" id="save-settings">Save settings</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
