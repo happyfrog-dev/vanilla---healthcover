@@ -269,7 +269,7 @@
   color: var(--clr-dark);
   margin-bottom: 2.5rem;
   font-size: 1rem;
-  line-height: 100%;
+  line-height: 140%;
   letter-spacing: -2%;
 }
 .quote-cta__image {
@@ -640,7 +640,7 @@
 }
 .footer__link {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   letter-spacing: -2%;
   padding: 12px;
