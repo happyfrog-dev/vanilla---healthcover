@@ -16,7 +16,7 @@
   --clr-border: #7fa5a44d;
   --clr-overlay: rgba(26, 37, 32, 0.55);
 
-  --font: 'Gilroy Light', system-ui, sans-serif;
+  --font: 'Gilroy', system-ui, sans-serif;
 
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -41,6 +41,15 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 html {
   scroll-behavior: smooth;
